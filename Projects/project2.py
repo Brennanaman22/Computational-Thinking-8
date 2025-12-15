@@ -28,7 +28,7 @@ elif answer3 == "B" or answer3 == "b":
 elif answer3 == "C" or answer3 == "c":
     pringles_points += 2
 
-    answer4 = input("Do you like A bags, B more bags, or C cylinders?    ")
+answer4 = input("Do you like A bags, B more bags, or C cylinders?    ")
 if answer4 == "A" or answer4 == "a":
     lays_points += 2
 elif answer4 == "B" or answer4 == "b":
@@ -36,7 +36,7 @@ elif answer4 == "B" or answer4 == "b":
 elif answer4 == "C" or answer4 == "c":
     pringles_points += 2
 
-    answer5 = input("Do you like things A deep fried, B seasoned and fried, or C cooked on a conveyor belt?    ")
+answer5 = input("Do you like things A deep fried, B seasoned and fried, or C cooked on a conveyor belt?    ")
 if answer5 == "A" or answer5 == "a":
     lays_points += 2
 elif answer5 == "B" or answer5 == "b":
@@ -51,4 +51,4 @@ if pringles_points >= lays_points and pringles_points >= doritos_points:
 elif lays_points >= pringles_points and lays_points >= doritos_points:
     print("you are a lays person and you like leys, chilling with friends, and have good humor")
 elif doritos_points >= lays_points and doritos_points >= pringles_points:
-    print(" you are a doritos person and like doritos,pizza, and have a nice attitude")
+    print("you are a doritos person and like doritos,pizza, and have a nice attitude")
