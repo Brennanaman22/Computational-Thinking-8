@@ -59,7 +59,7 @@ window.listen()
 for i in range(100000000000000000000):
     if diamonds >= 100:
         print("you win")
-        sprite1.write("YOU WIN!!!!!!!!", font = ("Arial", 40, "normal"))
+        sprite1.write("YOU WIN!!!!!!!! :)", font = ("Arial", 40, "normal"))
     
     # TODO - put any repeating actions here
 
