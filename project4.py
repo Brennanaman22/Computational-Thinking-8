@@ -3,6 +3,8 @@ from utils import *
 
 # Section 1 - setup
 set_background("minecraftcave")
+sprite1 = create_sprite("alien", -200, 200)
+sprite1.hideturtle()
 
 # TODO - create at least two variables and set their starting value. ex: cookies = 0
 stone = 0
@@ -40,6 +42,8 @@ def get_diamonds():
         create_sprite("diamonds.gif",x,y)
 window.onkeypress(get_diamonds, "d") 
 
+    
+
 
 
 # TODO - choose a key to do the action. ex: window.onkeypress(my_control, "space")
@@ -53,6 +57,9 @@ window.onkeypress(get_diamonds, "d")
 # Section 3 - game loop
 window.listen()
 for i in range(100000000000000000000):
+    if diamonds >= 100:
+        print("you win")
+        sprite1.write("YOU WIN!!!!!!!!", font = ("Arial", 40, "normal"))
     
     # TODO - put any repeating actions here
 
