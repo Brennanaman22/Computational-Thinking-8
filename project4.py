@@ -1,6 +1,6 @@
 import turtle, time, random
 from utils import *
-
+# the goal of the game is to win by collecting 100 diamonds 
 # Section 1 - setup
 set_background("minecraftcave")
 sprite1 = create_sprite("alien", -200, 200)
@@ -23,6 +23,8 @@ def mine_stone():
     y = random.randint(-200,200)
     create_sprite("Stone (1).gif",x,y)
 window.onkeypress(mine_stone, "space")
+# the mine_stone makes it so when you click the space bar you will get one stone added to 
+# the stone variable and a stone block will appear on screen
 def get_iron():
     global iron,stone
     if stone >= 3:
@@ -32,6 +34,8 @@ def get_iron():
         y = random.randint(-200,200)
         create_sprite("iron.gif",x,y)
 window.onkeypress(get_iron, "i")
+# the get_iron makes it so when you press the i key you get one iron added to you iron variable you lose three stone
+# and iron ore block appears on screen 
 def get_diamonds():
     global iron,diamonds
     if iron >= 3:
@@ -41,6 +45,7 @@ def get_diamonds():
         y = random.randint(-200,200)
         create_sprite("diamonds.gif",x,y)
 window.onkeypress(get_diamonds, "d") 
+#the get_diamonds lets you get a 1 added to your diamonds variable and you lose three iron and a diamond appears 
 
     
 
